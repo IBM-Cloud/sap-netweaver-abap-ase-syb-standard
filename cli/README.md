@@ -6,6 +6,7 @@ This solution will perform automated deployment of **SAP Netweaver on ASE DB** o
 
 It contains:  
 - Terraform scripts for deploying a VSI in an EXISTNG VPC with Subnet and Security Group configs.
+- The Terraform version used for deployment should be >= 1.3.6. Note: The deployment was tested with Terraform 1.3.6
 - Ansible scripts to install and configure a SAP Netweaver primary application server and ASE DB node.
 Please note that Ansible is started by Terraform and must be available on the same host.
 
