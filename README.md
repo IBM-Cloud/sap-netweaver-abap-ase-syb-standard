@@ -16,9 +16,10 @@ SAP Netweaver installation media used for this deployment is the default one for
 The VSI OS images that are supported for this solution are the following:
 
 For Netweaver primary application server
-- ibm-redhat-7-6-amd64-sap-applications-3
 - ibm-redhat-8-4-amd64-sap-applications-2
+- ibm-redhat-8-6-amd64-sap-applications-2
 - ibm-sles-15-3-amd64-sap-applications-2
+- ibm-sles-15-4-amd64-sap-applications-4
 
 The VSIs should have least two SSH keys configured to access as root user and the following storage volumes created for DB and SAP APP VSI:
 
@@ -49,7 +50,7 @@ SSH_KEYS                = [ "r010-57bfc315-f9e5-46bf-bf61-d87a24a9ce7a" , "r010-
 # SAP PAS VSI variables:
 HOSTNAME = "sapnwase"
 PROFILE = "bx2-4x16"
-IMAGE = "ibm-redhat-8-4-amd64-sap-applications-2"
+IMAGE = "ibm-redhat-8-6-amd64-sap-applications-2"
 ```
 
 Parameter | Description

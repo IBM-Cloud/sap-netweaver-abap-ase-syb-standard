@@ -76,7 +76,7 @@ variable "PROFILE" {
 variable "IMAGE" {
 	type		= string
 	description = "VSI OS Image"
-	default		= "ibm-redhat-7-6-amd64-sap-applications-3"
+	default		= "ibm-redhat-8-6-amd64-sap-applications-2"
 }
 
 variable "VOL1" {
