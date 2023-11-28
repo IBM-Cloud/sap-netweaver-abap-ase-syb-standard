@@ -1,6 +1,6 @@
 locals {
   folder_list = [
-    "${var.kit_export_dir}"
+    "${var.KIT_EXPORT_DIR}"
   ]
 }
 

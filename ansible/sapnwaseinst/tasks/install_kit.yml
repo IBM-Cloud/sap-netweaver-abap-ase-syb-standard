@@ -71,9 +71,9 @@
     group: root
     mode: 0777
 
-- name: Copy "{{ kit_saphotagent_file }}" kit to target
+- name: Copy "{{ kit_saphostagent_file }}" kit to target
   copy:
-    src: "{{ kit_saphotagent_file }}"
+    src: "{{ kit_saphostagent_file }}"
     dest: "{{ nwapp_kit }}/saphotagent.sar"
     owner: root
     group: root

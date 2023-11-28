@@ -1,13 +1,13 @@
-variable "ibmcloud_api_key" {
-	description	= "IBM Cloud API key"
+variable "IBMCLOUD_API_KEY" {
+	description	= "IBM Cloud API key. The IBM Cloud API Key can be created here: https://cloud.ibm.com/iam/apikeys"
 	sensitive	= true
 		validation {
-			condition     = length(var.ibmcloud_api_key) > 43 #&& substr(var.ibmcloud_api_key, 14, 15) == "-"
-			error_message = "The ibmcloud_api_key value must be a valid IBM Cloud API key."
+			condition     = length(var.IBMCLOUD_API_KEY) > 43 #&& substr(var.IBMCLOUD_API_KEY, 14, 15) == "-"
+			error_message = "The IBMCLOUD_API_KEY value must be a valid IBM Cloud API key."
 		}
 }
 
 provider "ibm" {
-    ibmcloud_api_key	= var.ibmcloud_api_key
-    region				    = var.REGION
+    ibmcloud_api_key	= var.IBMCLOUD_API_KEY
+    region				= var.REGION
 }

@@ -40,6 +40,7 @@ nwapp_required_configurations:
   - "hostname"
   - "kernel_RedHat8"
   - "umask_RHEL"
+  - "reboot"
   - "filesystems"
   - "SELinux"
   - "firewalld"

@@ -1,76 +1,76 @@
-variable "kit_sapcar_file" {
+variable "KIT_SAPCAR_FILE" {
 	type		= string
-	description = "kit_sapcar_file"
+	description = "KIT_SAPCAR_FILE"
     validation {
-    condition = fileexists("${var.kit_sapcar_file}") == true
+    condition = fileexists("${var.KIT_SAPCAR_FILE}") == true
     error_message = "The PATH  does not exist."
     }
 }
 
-variable "kit_swpm_file" {
+variable "KIT_SWPM_FILE" {
 	type		= string
-	description = "kit_swpm_file"
+	description = "KIT_SWPM_FILE"
     validation {
-    condition = fileexists("${var.kit_swpm_file}") == true
+    condition = fileexists("${var.KIT_SWPM_FILE}") == true
     error_message = "The PATH  does not exist."
     }
 }
 
-variable "kit_saphotagent_file" {
+variable "KIT_SAPHOSTAGENT_FILE" {
 	type		= string
-	description = "kit_saphotagent_file"
+	description = "KIT_SAPHOSTAGENT_FILE"
     validation {
-    condition = fileexists("${var.kit_saphotagent_file}") == true
+    condition = fileexists("${var.KIT_SAPHOSTAGENT_FILE}") == true
     error_message = "The PATH  does not exist."
     }
 }
 
-variable "kit_sapexe_file" {
+variable "KIT_SAPEXE_FILE" {
 	type		= string
-	description = "kit_sapexe_file"
+	description = "KIT_SAPEXE_FILE"
     validation {
-    condition = fileexists("${var.kit_sapexe_file}") == true
+    condition = fileexists("${var.KIT_SAPEXE_FILE}") == true
     error_message = "The PATH  does not exist."
     }
 }
 
-variable "kit_sapexedb_file" {
+variable "KIT_SAPEXEDB_FILE" {
 	type		= string
-	description = "kit_sapexedb_file"
+	description = "KIT_SAPEXEDB_FILE"
     validation {
-    condition = fileexists("${var.kit_sapexedb_file}") == true
+    condition = fileexists("${var.KIT_SAPEXEDB_FILE}") == true
     error_message = "The PATH  does not exist."
     }
 }
 
-variable "kit_igsexe_file" {
+variable "KIT_IGSEXE_FILE" {
 	type		= string
-	description = "kit_igsexe_file"
+	description = "KIT_IGSEXE_FILE"
     validation {
-    condition = fileexists("${var.kit_igsexe_file}") == true
+    condition = fileexists("${var.KIT_IGSEXE_FILE}") == true
     error_message = "The PATH  does not exist."
     }
 }
 
-variable "kit_igshelper_file" {
+variable "KIT_IGSHELPER_FILE" {
 	type		= string
-	description = "kit_igshelper_file"
+	description = "KIT_IGSHELPER_FILE"
     validation {
-    condition = fileexists("${var.kit_igshelper_file}") == true
+    condition = fileexists("${var.KIT_IGSHELPER_FILE}") == true
     error_message = "The PATH  does not exist."
     }
 }
 
-variable "kit_ase_file" {
+variable "KIT_ASE_FILE" {
 	type		= string
-	description = "kit_ase_file"
+	description = "KIT_ASE_FILE"
     validation {
-    condition = fileexists("${var.kit_ase_file}") == true
+    condition = fileexists("${var.KIT_ASE_FILE}") == true
     error_message = "The PATH  does not exist."
     }
 }
 
-variable "kit_export_dir" {
+variable "KIT_EXPORT_DIR" {
 	type		= string
-	description = "kit_export_dir"
+	description = "KIT_EXPORT_DIR"
 }

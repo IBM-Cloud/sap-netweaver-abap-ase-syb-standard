@@ -8,9 +8,9 @@ variable "ID_RSA_FILE_PATH" {
     description = "Input your id_rsa private key file path in OpenSSH format."
 }
 
-variable "sap_main_password" {
+variable "SAP_MAIN_PASSWORD" {
     type = string
-    description = "sap_main_password"
+    description = "SAP_MAIN_PASSWORD"
 }
 
 variable "PLAYBOOK" {

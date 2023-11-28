@@ -1,0 +1,19 @@
+---
+# SAP Note: https://me.sap.com/notes/3394455/E
+
+- name: Check for the Lock
+  shell: zypper locks
+  register: zypper_locks
+  when: ansible_distribution == "SLES_SAP" and ansible_distribution_major_version == "15"
+  changed_when: false
+
+- name: Downgrade libstdc to libstdc++6=12.3.0+git1204-150000.1.16.1
+  zypper:
+    name: libstdc++6=12.3.0+git1204-150000.1.16.1
+    state: present
+    oldpackage: true
+
+- name: Lock libstdc++6 version
+  shell: zypper addlock -m 'Lock from being updated until solution of KBA 3394455 is available.' libstdc++6
+  when: zypper_locks.stdout.find('KBA 3394455') == -1
+...
